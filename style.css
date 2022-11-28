@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    margin: 1rem;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.marked {
+    margin-top: 1rem;
+    border: blue 3px solid;
+    padding: 1rem;
+}
