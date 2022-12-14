@@ -11,7 +11,7 @@ countryInput.addEventListener("keyup", () => {
 const submit = (e) => {
     e.preventDefault();
     if (value) {
-        fetch(`https://restcountries.com/v3.1/name/${value}`)
+        fetch(`https://restcountries.com/v3.1/lang/${value}`)
             .then((res) => res.json())
             .then((data) => {
                 if (data.status === 404) {
@@ -43,9 +43,7 @@ const submit = (e) => {
                 }
             })
             .catch((err) => alert(err));
-    } else {
     }
-
     list.innerHTML = "";
     countryInput.value = "";
 };
